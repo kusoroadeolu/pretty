@@ -78,7 +78,7 @@ public class PrettyPrinter {
                         .append(COLON)
                         .append(Arrays.toString(arr))
                         .append(NEWLINE);
-            } else if(!seen.add(child)){
+            } else if(seen.add(child)){
                 sb.repeat(EMPTY, indent)
                         .append(field.getName())
                         .append(COLON)
